@@ -1,5 +1,5 @@
 ---
-title: "Homework #0: Hello SYS-6018"
+title: "Homework #0: Hello DS 6410"
 author: "**Your Name Here**"
 format: ds6410hw-html
 ---
