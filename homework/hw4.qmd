@@ -4,6 +4,11 @@ author: "**Your Name Here**"
 format: ds6410hw-html
 ---
 
+::: {style="background-color:yellow; color:red; display: block; border-color: black; padding:1em"}
+This is an **independent assignment**. Do not discuss or work with classmates.
+:::
+
+
 ```{r config, include=FALSE}
 # Set global configurations and settings here
 knitr::opts_chunk$set()                 # set global chunk options
