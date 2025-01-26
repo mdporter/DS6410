@@ -4,17 +4,19 @@ author: "**Your Name Here**"
 format: ds6410hw-html
 ---
 
-```{r config, include=FALSE}
+```{r config}
+#| include: false
 # Set global configurations and settings here
 knitr::opts_chunk$set()                 # set global chunk options
 ggplot2::theme_set(ggplot2::theme_bw()) # set ggplot2 theme
 ```
 
 
+# Required R packages and Directories  {.unnumbered .unlisted}
 
-# Required R packages and Directories
-
-```{r packages, message=FALSE, warning=FALSE}
+```{r packages}
+#| message: false
+#| warning: false
 library(tidyverse) # functions for data manipulation
 ```
 
@@ -77,7 +79,6 @@ What is the best achievable MSE? That is, what is the MSE if the true $f(x)$ was
 Add solution here
 :::
 
-
 ## f. Replication
 
 The MSE scores obtained in part *d* came from one realization of training data. Here will we explore how much variation there is in the MSE scores by replicating the simulation many times.
@@ -87,7 +88,7 @@ The MSE scores obtained in part *d* came from one realization of training data. 
     - Use `set.seed(613)` prior to running the simulation and do not set the seed in any other places.
 - Calculate the test MSE for all simulations.
     - Use the same test data from part d. (This question is only about the variability that comes from the *training data*).
-- Create kernel density or histogram plots of the resulting MSE values for each model.lots of the resulting MSE values for each model.
+- Create kernel density or histogram plots of the resulting MSE values for each model.
 
 ::: {.callout-note title="Solution"}
 Add solution here
@@ -109,12 +110,11 @@ Write a function that implements the simulation in part *f*. The function should
 Add solution here
 :::
 
-
 ## i. Performance when $\sigma=2$ 
 
 Use your function to repeat the simulation in part *f*, but use $\sigma=2$. Report the number of times each model was best (you do not need to produce any plots). 
 
-- First generate new test data with ($n = 10000$, $\sigma = 2$, using `seed = 612`). 
+- Be sure to generate new test data with ($n = 10000$, $\sigma = 2$, using `seed = 612`). 
 
 ::: {.callout-note title="Solution"}
 Add solution here
@@ -124,12 +124,11 @@ Add solution here
 
 Repeat *i*, but now use $\sigma=4$ and $n=300$.
 
-- First generate new test data with ($n = 10000$, $\sigma = 4$, using `seed = 612`). 
+- Be sure to generate new test data with ($n = 10000$, $\sigma = 4$, using `seed = 612`). 
 
 ::: {.callout-note title="Solution"}
 Add solution here
 :::
-
 
 ## k. Understanding
 
@@ -138,4 +137,7 @@ Describe the effects $\sigma$ and $n$ has on selection of the best model? Why is
 ::: {.callout-note title="Solution"}
 Add solution here
 :::
+
+
+
 
